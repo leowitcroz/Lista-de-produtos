@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Minha loja 1.0</h1>
+    </header>
+
+    <main>
+      <div class="titulo">
+        <h2>Produtos</h2>
+        <span>Lista de produtos.</span>
+      </div>
+
+      <div class="card">
+        <div class="lineInput">
+          <label for="">Produto</label>
+          <input
+            type="text"
+            id="produto"
+            placeholder="nome-do-produto
+            "
+          />
+        </div>
+        <div class="lineInput">
+          <label for="">Valor</label>
+          <input type="text" id="valor" placeholder="valor-do-produto" />
+        </div>
+
+        <button onclick="produto.salvar()" id="btn1">salvar</button>
+        <button onclick="produto.cancelar()">cancelar</button>
+      </div>
+      <div class="conteudo">
+        <table border="1">
+            <thead>
+                <th class="center">ID</th>
+                <th class="center">PRODUTO</th>
+                <th class="center">VALOR</th>
+                <th class="center">AÇÕES</th>
+            </thead>
+
+            <tbody id="tbody">
+           <!------ <td>1</td>
+                <td >mesa</td>
+                <td ">400</td>
+                <td class="center"><img src="images/editar-texto.png" alt="">
+                 <img src="images/excluir (1).png" alt=""></td> ---->
+            </tbody>
+        </table>
+
+
+      </div>
+
+    </main>
+  </body>
+</html>
